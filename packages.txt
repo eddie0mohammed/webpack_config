@@ -10,3 +10,28 @@ npm install --save-dev bootstrap clean-webpack-plugin css-loader file-loader htm
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
+
+
+  //project structure
+
+  1. npm init -y 
+  2. install packages
+  3. mkdir src
+
+  src : 
+  1. template.html
+  2. main.scss
+  3. index.js
+  4. vendor.js
+
+  A. main.scss :
+	//import bootstrap styles
+		@import "~bootstrap/scss/bootstrap";
+
+  B. index.js :
+  	//import styles main.scss
+		import "./main.scss";
+
+  C. vendor.js :
+  	//import bootstrap.js 
+		import "bootstrap";
